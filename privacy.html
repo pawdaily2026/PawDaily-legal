@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>개인정보처리방침 — 포데일리(PawDaily)</title>
+<style>
+:root {
+  --sage: #A7C4B5;
+  --sage-dark: #7DA495;
+  --sage-bg: #E8F2EC;
+  --text: #1A1F1D;
+  --text-sub: #6B7570;
+  --border: #E4ECE8;
+  --card: #F7FAF8;
+  --warn-bg: #FFF8E6;
+  --warn-border: #E5CC7A;
+  --warn-text: #6F5A1F;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Pretendard', 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+  background: #fff;
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 15px;
+  padding: 0 0 60px;
+}
+.header {
+  background: var(--sage-bg);
+  padding: 40px 24px 32px;
+  border-bottom: 1px solid var(--border);
+}
+.header h1 { font-size: 22px; font-weight: 700; margin-bottom: 6px; }
+.header .meta { font-size: 13px; color: var(--text-sub); }
+.header .meta span { display: inline-block; margin-right: 16px; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 32px 24px; }
+h2 {
+  font-size: 17px; font-weight: 700;
+  margin: 36px 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--sage);
+}
+h3 { font-size: 15px; font-weight: 600; margin: 20px 0 8px; color: var(--sage-dark); }
+p { margin-bottom: 10px; }
+ul, ol { padding-left: 20px; margin-bottom: 10px; }
+li { margin-bottom: 6px; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 16px; }
+th, td { padding: 10px 12px; border: 1px solid var(--border); text-align: left; vertical-align: top; }
+th { background: var(--card); font-weight: 600; color: var(--text-sub); font-size: 13px; }
+.highlight {
+  background: var(--warn-bg);
+  border: 1px solid var(--warn-border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin: 16px 0;
+  font-size: 14px;
+  color: var(--warn-text);
+  line-height: 1.65;
+}
+.officer-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 12px 0;
+}
+.officer-card .name { font-size: 16px; font-weight: 600; margin-bottom: 8px; }
+.officer-card .info { font-size: 14px; color: var(--text-sub); line-height: 1.8; }
+.toc {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+.toc h3 { font-size: 14px; color: var(--text); margin-bottom: 10px; }
+.toc ol { margin: 0; }
+.toc li { margin-bottom: 4px; }
+.toc a { color: var(--sage-dark); text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+.effective { font-size: 14px; color: var(--text-sub); margin-top: 6px; }
+@media (max-width: 600px) {
+  .header { padding: 28px 16px 24px; }
+  .wrap { padding: 24px 16px; }
+  table { font-size: 13px; }
+  th, td { padding: 8px 10px; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>개인정보처리방침</h1>
+  <div class="meta">
+    <span><b>서비스명</b> 포데일리(PawDaily)</span>
+    <span><b>버전</b> 1.0</span>
+    <span><b>시행일</b> 2026년 4월 22일</span>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="toc">
+    <h3>목차</h3>
+    <ol>
+      <li><a href="#s1">수집하는 개인정보 항목 및 수집 방법</a></li>
+      <li><a href="#s2">개인정보의 처리 목적</a></li>
+      <li><a href="#s3">개인정보의 보유 및 이용 기간</a></li>
+      <li><a href="#s4">개인정보의 제3자 제공</a></li>
+      <li><a href="#s5">개인정보 처리의 위탁 및 국외 이전</a></li>
+      <li><a href="#s6">정보주체의 권리·의무 및 행사 방법</a></li>
+      <li><a href="#s7">개인정보의 파기 절차 및 방법</a></li>
+      <li><a href="#s8">개인정보 보호 책임자</a></li>
+      <li><a href="#s9">개인정보처리방침 변경</a></li>
+    </ol>
+  </div>
+
+  <p>포데일리(PawDaily) 앱(이하 "서비스")을 운영하는 개인(이하 "운영자")은 개인정보보호법, 정보통신망 이용촉진 및 정보보호 등에 관한 법률에 따라 이용자의 개인정보를 보호하고, 이와 관련한 고충을 신속하게 처리하기 위하여 본 방침을 수립·공개합니다.</p>
+
+  <h2 id="s1">제1조 수집하는 개인정보 항목 및 수집 방법</h2>
+
+  <h3>1. 수집 항목</h3>
+  <table>
+    <thead><tr><th>구분</th><th>수집 항목</th><th>수집 시점</th></tr></thead>
+    <tbody>
+      <tr><td>이메일 회원가입</td><td>이메일 주소, 비밀번호(암호화 저장)</td><td>회원가입 시</td></tr>
+      <tr><td>카카오 로그인</td><td>카카오 회원번호, 이메일(선택), 프로필 닉네임</td><td>소셜 로그인 시</td></tr>
+      <tr><td>Google 로그인</td><td>Google 계정 ID, 이메일, 프로필 이름</td><td>소셜 로그인 시</td></tr>
+      <tr><td>Apple 로그인</td><td>Apple 식별자, 이메일(또는 중계 이메일)</td><td>소셜 로그인 시</td></tr>
+      <tr><td>프로필 설정</td><td>사용자 닉네임(아이디), 프로필 사진, 반려동물과의 관계</td><td>프로필 설정 시</td></tr>
+      <tr><td>반려동물 정보</td><td>이름, 종(개/고양이), 품종, 생년월일, 성별, 중성화 여부, 체중, 프로필 사진</td><td>반려동물 등록 시</td></tr>
+      <tr><td>일기·건강 기록</td><td>텍스트, 사진, 날짜, 기분, 해시태그, 체중 기록</td><td>일기 작성 시</td></tr>
+      <tr><td>AI 증상 분석</td><td>입력 증상 텍스트, 반려동물 기본 정보(종·나이·체중·중성화 여부)</td><td>증상 분석 이용 시</td></tr>
+      <tr><td>커뮤니티</td><td>게시글 텍스트, 사진, 댓글, 좋아요 기록</td><td>커뮤니티 이용 시</td></tr>
+      <tr><td>위치 정보</td><td>현재 위치(위도·경도, 앱 사용 중에만)</td><td>주변 동물병원 찾기 이용 시</td></tr>
+      <tr><td>알림 설정</td><td>알림 수신 여부, 알림 시간 설정</td><td>알림 설정 시</td></tr>
+      <tr><td>자동 수집</td><td>앱 버전, 기기 종류(iOS), 서비스 이용 기록, 오류 로그</td><td>서비스 이용 중</td></tr>
+    </tbody>
+  </table>
+
+  <h3>2. 수집 방법</h3>
+  <ul>
+    <li>앱 회원가입 및 서비스 이용 과정에서 이용자가 직접 입력</li>
+    <li>카카오·Google·Apple 소셜 로그인을 통한 해당 서비스의 동의 후 제공</li>
+    <li>서비스 이용 과정에서 자동 생성·수집</li>
+  </ul>
+
+  <h2 id="s2">제2조 개인정보의 처리 목적</h2>
+  <table>
+    <thead><tr><th>목적</th><th>수집 항목</th></tr></thead>
+    <tbody>
+      <tr><td>회원 관리 및 본인 확인</td><td>이메일, 소셜 계정 ID</td></tr>
+      <tr><td>서비스 제공(일기·건강기록·AI 분석·커뮤니티)</td><td>반려동물 정보, 일기·증상 기록, 사진</td></tr>
+      <tr><td>주변 동물병원 검색</td><td>현재 위치(일시적)</td></tr>
+      <tr><td>AI 검색 결과 제공</td><td>검색결과 텍스트, 반려동물 기본 정보 (Anthropic Claude API에 전송)</td></tr>
+      <tr><td>맞춤 알림 발송</td><td>알림 설정 정보, 기기 토큰</td></tr>
+      <tr><td>서비스 개선 및 오류 해소</td><td>이용 로그, 오류 기록</td></tr>
+    </tbody>
+  </table>
+
+  <h2 id="s3">제3조 개인정보의 보유 및 이용 기간</h2>
+  <table>
+    <thead><tr><th>항목</th><th>보유 기간</th></tr></thead>
+    <tbody>
+      <tr><td>회원 계정 정보</td><td>회원 탈퇴 시 즉시 삭제</td></tr>
+      <tr><td>반려동물 정보, 일기·건강 기록</td><td>회원 탈퇴 시 즉시 삭제</td></tr>
+      <tr><td>커뮤니티 게시글·댓글</td><td>삭제 요청 또는 회원 탈퇴 시 삭제</td></tr>
+      <tr><td>AI 증상 분석 기록</td><td>회원 탈퇴 시 즉시 삭제 (Anthropic 서버에는 저장되지 않음)</td></tr>
+      <tr><td>위치 정보</td><td>병원 검색 직후 즉시 파기 (서버 저장 없음)</td></tr>
+    </tbody>
+  </table>
+  <div class="highlight">
+    <b>위치정보 안내</b> — 주변 동물병원 검색 시 기기의 현재 위치(위도·경도)를 Google Maps API에 일시 전송합니다. 이 정보는 서버에 저장되지 않으며 요청 완료 즉시 파기됩니다.
+  </div>
+
+  <h2 id="s4">제4조 개인정보의 제3자 제공</h2>
+  <p>운영자는 원칙적으로 이용자의 개인정보를 외부에 제공하지 않습니다. 다만 아래의 경우 예외로 합니다.</p>
+  <ul>
+    <li>이용자가 사전에 동의한 경우</li>
+    <li>법령의 규정에 의거하거나 수사기관의 적법한 요청이 있는 경우</li>
+  </ul>
+  <p>커뮤니티에 게시된 <b>공개 게시글</b>은 다른 이용자에게 공개됩니다. 비공개로 설정한 일기는 본인만 열람 가능합니다.</p>
+
+  <h2 id="s5">제5조 개인정보 처리의 위탁 및 국외 이전</h2>
+
+  <h3>1. 국내 위탁</h3>
+  <table>
+    <thead><tr><th>수탁자</th><th>위탁 업무</th></tr></thead>
+    <tbody>
+      <tr><td>카카오(Kakao Corp.)</td><td>카카오 로그인 인증 처리</td></tr>
+    </tbody>
+  </table>
+
+  <h3>2. 국외 이전 (별도 고지)</h3>
+  <div class="highlight">
+    <b>개인정보보호법 제28조의8에 따른 국외 이전 고지</b><br><br>
+    아래 업체에 일부 개인정보를 국외로 이전합니다. 서비스 이용은 이에 대한 동의로 간주됩니다.
+  </div>
+  <table>
+    <thead><tr><th>이전 업체</th><th>국가</th><th>이전 항목</th><th>이전 목적</th><th>보유 기간</th></tr></thead>
+    <tbody>
+      <tr><td>Google LLC (Firebase)</td><td>미국</td><td>계정 정보, 앱 데이터 전체(Firestore), 인증 정보, 사진</td><td>서비스 인프라·인증·데이터 저장 (asia-northeast3 리전)</td><td>회원 탈퇴 시 삭제</td></tr>
+      <tr><td>Anthropic PBC</td><td>미국</td><td>증상 텍스트, 반려동물 기본 정보(종·나이·체중·중성화 여부)</td><td>AI 증상 분석 (Claude API)</td><td>API 요청 완료 즉시 파기</td></tr>
+      <tr><td>Google LLC (Maps Platform)</td><td>미국</td><td>위치 정보(위도·경도)</td><td>주변 동물병원 검색</td><td>요청 완료 즉시 파기</td></tr>
+      <tr><td>Google LLC (Gemini API)</td><td>미국</td><td>증상 텍스트, 반려동물 기본 정보</td><td>AI 증상 분석 보완 (Gemini API)</td><td>API 요청 완료 즉시 파기</td></tr>
+      <tr><td>Apple Inc.</td><td>미국</td><td>Apple 식별자, 이메일</td><td>Apple Sign In 인증</td><td>Apple 정책에 따름</td></tr>
+    </tbody>
+  </table>
+
+  <h2 id="s6">제6조 정보주체의 권리·의무 및 행사 방법</h2>
+  <p>이용자(만 14세 이상)는 언제든지 다음 권리를 행사할 수 있습니다.</p>
+  <ul>
+    <li><b>열람 요청</b> — 본인의 개인정보 처리 현황 확인</li>
+    <li><b>정정·삭제 요청</b> — 앱 내 설정에서 직접 수정하거나 이메일로 요청</li>
+    <li><b>처리 정지 요청</b> — 특정 항목의 처리 중단 요청</li>
+    <li><b>회원 탈퇴</b> — 앱 내 "설정 → 회원 탈퇴" 메뉴를 통해 즉시 처리</li>
+  </ul>
+  <p>권리 행사는 앱 내 설정 또는 아래 개인정보 보호 책임자 이메일로 연락 바랍니다. 운영자는 요청 접수 후 10영업일 이내 처리합니다.</p>
+  <p><b>만 14세 미만 아동</b>은 서비스를 이용할 수 없으며 가입 시 생년월일 확인으로 제한합니다.</p>
+
+  <h2 id="s7">제7조 개인정보의 파기 절차 및 방법</h2>
+  <p>운영자는 개인정보 보유 기간 경과, 처리 목적 달성 등 개인정보가 불필요하게 되었을 때 지체 없이 해당 개인정보를 파기합니다.</p>
+  <ul>
+    <li><b>전자적 파일</b> — 복구 불가능한 방법으로 영구 삭제</li>
+    <li><b>클라우드 데이터</b> — Firebase Firestore 해당 문서 즉시 삭제, Storage 파일 즉시 삭제, Firebase Auth 계정 영구 삭제</li>
+  </ul>
+
+  <h2 id="s8">제8조 개인정보 보호 책임자</h2>
+  <p>운영자는 개인정보 처리에 관한 업무를 총괄하고, 관련 불만 처리 및 피해 구제를 위하여 아래와 같이 개인정보 보호 책임자를 지정합니다.</p>
+  <div class="officer-card">
+    <div class="name">개인정보 보호 책임자</div>
+    <div class="info">
+      이름: 김민규<br>
+      이메일: pawdaily2026@gmail.com<br>
+      서비스: 포데일리(PawDaily) 앱
+    </div>
+  </div>
+  <p>개인정보 침해에 관한 신고·상담은 아래 기관에도 문의하실 수 있습니다.</p>
+  <ul>
+    <li>개인정보 침해신고센터: privacy.kisa.or.kr (국번 없이 118)</li>
+    <li>개인정보 분쟁조정위원회: www.kopico.go.kr (1833-6972)</li>
+    <li>대검찰청 사이버범죄수사단: 02-3480-3571</li>
+    <li>경찰청 사이버안전국: 국번 없이 182</li>
+  </ul>
+
+  <h2 id="s9">제9조 개인정보처리방침 변경</h2>
+  <p>이 개인정보처리방침은 2026년 4월 22일부터 시행됩니다. 내용 추가·삭제·수정이 있을 시에는 시행 7일 전부터 앱 공지사항 또는 이 페이지를 통해 고지합니다.</p>
+  <p class="effective">시행일: 2026년 4월 22일 | 최종 수정일: 2026년 4월 21일</p>
+
+</div>
+</body>
+</html>
