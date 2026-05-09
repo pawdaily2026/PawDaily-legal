@@ -34,7 +34,7 @@
 <body>
 
 <h1>고객지원</h1>
-<div class="meta">서비스명: 포데일리(PawDaily) &nbsp;|&nbsp; 최종 업데이트: 2026년 4월 23일</div>
+<div class="meta">서비스명: 포데일리(PawDaily) &nbsp;|&nbsp; 최종 업데이트: 2026년 5월 9일</div>
 
 <p>포데일리를 이용해주셔서 감사합니다. 사용 중 궁금한 점이나 개선 의견이 있으시면 언제든지 문의해주세요.</p>
 
@@ -77,22 +77,39 @@
 </ul>
 
 <h3>Q6. 포데일리는 내 위치 정보를 수집하나요?</h3>
-<p><strong>수집하지 않습니다.</strong> 포데일리는 GPS 권한을 요청하지 않으며, 위치 좌표를 저장하거나 서버로 전송하지 않습니다. 동물병원 찾기 기능은 사용자가 직접 입력한 지역명(예: "강남구", "해운대구")을 기반으로 검색합니다.</p>
+<p><strong>v1.1+ 산책 트래킹 기능을 사용하실 때만, 그것도 회원이 Apple Watch에서 산책 시작 버튼을 직접 누른 시점부터 종료(또는 2시간 자동 종료)까지에 한정하여 수집합니다.</strong> 백그라운드 상시 추적은 하지 않으며, 산책 트래킹을 사용하지 않으면 GPS는 전혀 수집되지 않습니다.</p>
+<ul>
+  <li><strong>저장 위치</strong>: raw GPS 좌표는 Apple HealthKit(단말 내)에만 저장되며, PawDaily 서버에는 저장하지 않습니다. 서버에는 폴리라인 이미지(PNG)와 거리·시간만 저장됩니다.</li>
+  <li><strong>지도 표시</strong>: 산책 상세 화면에서 폴리라인을 보실 때 CARTO Inc.(미국) 지도 타일 서버에 단말의 IP가 노출됩니다(좌표는 노출되지 않음).</li>
+  <li><strong>거부</strong>: HealthKit·위치 권한 거부 또는 「위치기반서비스 이용약관」 미동의 시 산책 트래킹 기능만 제한되며, 다른 기능(반려동물 정보, AI 검색, 동물병원 찾기, 일기, 커뮤니티)은 정상 이용 가능합니다.</li>
+  <li><strong>동물병원 찾기</strong>: 사용자가 직접 입력한 지역명(예: "강남구", "해운대구")을 기반으로 검색하며, 별도의 GPS 권한이 필요하지 않습니다.</li>
+</ul>
+<p>자세한 사항은 <a href="location.html">위치기반서비스 이용약관</a>과 <a href="privacy.html">개인정보처리방침</a>을 참조해주세요.</p>
 
-<h3>Q7. 푸시 알림을 끄거나 켜려면?</h3>
+<h3>Q7. Apple Watch 산책 트래킹은 어떻게 사용하나요?</h3>
+<p>Apple Watch에서 PawDaily 앱을 열고 「산책 시작」 버튼을 누르면 산책 세션이 시작됩니다. 종료 버튼을 누르면 거리·시간·경로가 자동으로 iPhone에 동기화되어 「일기 → 산책」 탭에서 확인하실 수 있습니다.</p>
+<ul>
+  <li><strong>준비물</strong>: Apple Watch (Series 6 이상 권장) + iPhone (iOS 17+)</li>
+  <li><strong>권한</strong>: HealthKit, 위치(While Using), 「위치기반서비스 이용약관」 동의</li>
+  <li><strong>가족 공유</strong>: 동일한 반려동물에 등록된 가족 구성원 간 산책 기록을 공동 열람할 수 있습니다.</li>
+  <li><strong>2시간 자동 종료</strong>: 종료 버튼을 누르지 않아도 2시간 후 자동으로 세션이 종료됩니다.</li>
+</ul>
+
+<h3>Q8. 푸시 알림을 끄거나 켜려면?</h3>
 <p>앱 설정 → 알림 메뉴에서 산책·식사·일기 등 알림 종류별로 on/off 및 시간 설정이 가능합니다. iOS 시스템 알림 권한은 기기 설정 → 알림 → 포데일리에서 별도로 제어할 수 있습니다.</p>
 
-<h3>Q8. 앱에 오류가 있거나 개선 의견이 있어요.</h3>
+<h3>Q9. 앱에 오류가 있거나 개선 의견이 있어요.</h3>
 <p>아래 이메일로 버전·기종·증상을 함께 보내주시면 빠르게 확인하고 반영해드리겠습니다.</p>
 <ul>
   <li>문의 이메일: <a href="mailto:pawdaily2026@gmail.com">pawdaily2026@gmail.com</a></li>
   <li>앱 내 경로: 앱 설정 → 고객지원 → 고객센터 문의 (앱 버전과 OS 정보가 자동 첨부됩니다)</li>
 </ul>
 
-<h2>이용약관 · 개인정보처리방침</h2>
+<h2>이용약관 · 개인정보처리방침 · 위치기반서비스 이용약관</h2>
 <div class="info">
   <p><strong>이용약관</strong>: <a href="terms.html">terms.html</a></p>
   <p><strong>개인정보처리방침</strong>: <a href="privacy.html">privacy.html</a></p>
+  <p><strong>위치기반서비스 이용약관 (v1.1+ 산책 트래킹)</strong>: <a href="location.html">location.html</a></p>
 </div>
 
 <footer>

@@ -40,7 +40,7 @@
 <body>
 
 <h1>개인정보처리방침</h1>
-<div class="meta">서비스명: 포데일리(PawDaily) &nbsp;|&nbsp; 시행일: 2026년 4월 27일</div>
+<div class="meta">서비스명: 포데일리(PawDaily) &nbsp;|&nbsp; 시행일: 2026년 5월 9일 (개정) &nbsp;|&nbsp; 최초 시행: 2026년 4월 27일</div>
 
 <p>김민규(이하 '운영자')는 포데일리(PawDaily) 서비스를 운영함에 있어 이용자의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 다음과 같이 개인정보처리방침을 수립·공개합니다.</p>
 
@@ -67,7 +67,7 @@
 <h2 id="s1">제1조 개인정보의 수집·이용 목적</h2>
 <ol>
   <li><strong>회원 관리</strong>: 본인 확인, 가입 의사 확인, 연령 확인, 이용 제한 조치, 분쟁 조정을 위한 기록 보존, 민원 처리, 고지사항 전달</li>
-  <li><strong>서비스 제공 및 기능 개선</strong>: 반려동물 건강 기록 관리, AI 증상 검색 참고 정보 제공, 동물병원 검색, 커뮤니티 기능 운영, 푸시 알림 발송, 서비스 개인화, 앱 사용 통계 분석, AI 기술 적용 및 개선</li>
+  <li><strong>서비스 제공 및 기능 개선</strong>: 반려동물 건강 기록 관리, AI 증상 검색 참고 정보 제공, 동물병원 검색, 반려동물 산책 트래킹 및 운동 기록 관리(v1.1+, 가족 공유 포함), 커뮤니티 기능 운영, 푸시 알림 발송, 서비스 개인화, 앱 사용 통계 분석, AI 기술 적용 및 개선</li>
   <li><strong>마케팅 및 광고</strong>: 별도 수신 동의를 받은 경우에 한하여 서비스 안내 및 이벤트 정보 제공(푸시 알림, 이메일)</li>
 </ol>
 
@@ -121,6 +121,12 @@
     <td>성장일기, 증상 정보, AI 검색 결과, 체크인 기록, 사진</td>
     <td>앱 내 직접 입력·업로드</td>
     <td>탈퇴 후 즉시 파기</td>
+  </tr>
+  <tr>
+    <td><strong>산책 기록 (v1.1+)</strong></td>
+    <td>거리(m), 소요시간(초), 폴리라인 이미지(PNG·썸네일), 시작·종료 시각, 산책 시작 위치 좌표(폴리라인 시작점), 회원이 입력한 한마디(선택)</td>
+    <td>Apple Watch 산책 시 자동 수집 (HealthKit Workout Session 기반)</td>
+    <td>회원이 산책 기록을 삭제하거나 탈퇴 시 즉시 파기<br>(raw GPS 좌표 시계열은 PawDaily 서버에 저장하지 않으며, Apple HealthKit 단말 내에 보관됨)</td>
   </tr>
   <tr>
     <td><strong>커뮤니티</strong></td>
@@ -179,7 +185,12 @@
   </tr>
   <tr>
     <td>Apple Inc.</td>
-    <td>Sign In with Apple 인증, 앱 배포(App Store), 푸시 알림(APNs)</td>
+    <td>Sign In with Apple 인증, 앱 배포(App Store), 푸시 알림(APNs), HealthKit Workout 데이터 동기화 (v1.1+ 산책 트래킹)</td>
+    <td>위탁 계약 종료 시까지</td>
+  </tr>
+  <tr>
+    <td>CARTO Inc.</td>
+    <td>산책 폴리라인 표시용 지도 타일 제공 (v1.1+, 산책 상세 화면 열람 시에만 동작)</td>
     <td>위탁 계약 종료 시까지</td>
   </tr>
 </table>
@@ -215,11 +226,25 @@
     <td>API 호출 처리 즉시 (저장하지 않음)</td>
   </tr>
   <tr>
-    <td>Apple Inc.</td>
+    <td>Apple Inc.<br>(Sign In · APNs)</td>
     <td>미국</td>
     <td>Apple 로그인 연동 시 제공된 이메일·이름, 기기 푸시 토큰</td>
     <td>Apple 로그인 인증, 푸시 알림(APNs) 발송</td>
     <td>위탁 계약 종료 시까지</td>
+  </tr>
+  <tr>
+    <td>Apple Inc.<br>(HealthKit · v1.1+)</td>
+    <td>미국</td>
+    <td>산책 GPS 좌표 시계열, 운동 세션 메타데이터(거리·시간·페이스), 단말 식별자</td>
+    <td>Apple Watch 산책 트래킹 데이터의 단말 간 동기화 및 iCloud 백업</td>
+    <td>회원이 iOS 설정 → 건강 → 데이터 액세스 및 기기 → 데이터 삭제하거나 단말을 초기화할 때까지<br>(운영자는 HealthKit 내 데이터에 접근할 수 없으며 별도 보관하지 않음)</td>
+  </tr>
+  <tr>
+    <td>CARTO Inc.<br>(v1.1+)</td>
+    <td>미국</td>
+    <td>회원 단말 IP 주소, 지도 타일 요청 시각, 요청 타일의 좌표 범위<br>(산책 상세 화면 열람 시에만 발생)</td>
+    <td>산책 폴리라인을 지도 위에 표시하기 위한 지도 타일 응답</td>
+    <td>타일 fetch 즉시 폐기 (CARTO 서버에 위치 좌표를 저장하지 않음)</td>
   </tr>
 </table>
 
@@ -229,6 +254,7 @@
   <li>Anthropic: https://www.anthropic.com/privacy</li>
   <li>Apple: https://www.apple.com/legal/privacy/ko/</li>
   <li>Kakao: https://www.kakao.com/policy/privacy</li>
+  <li>CARTO: https://carto.com/privacy/</li>
 </ul>
 
 <h2 id="s6">제6조 이용자 및 법정대리인의 권리와 행사방법</h2>
@@ -271,6 +297,7 @@
 <h2 id="s10">제10조 개인정보 자동 수집 장치의 설치·운영 및 거부</h2>
 <ol>
   <li>운영자는 서비스 개선 및 사용 통계 분석을 위해 앱 사용 이력, 기기 정보 등을 자동으로 수집합니다.</li>
+  <li>v1.1+ 산책 트래킹 기능 이용 시, 회원이 Apple Watch에서 산책 시작 버튼을 명시적으로 누른 시점부터 종료(또는 2시간 자동 종료) 시점까지에 한정하여 GPS 좌표를 수집합니다. 백그라운드 상시 위치 추적은 수행하지 않으며, 자세한 사항은 「위치기반서비스 이용약관」을 참조하십시오.</li>
   <li>기기의 광고 식별자(IDFA/GAID) 수집은 기기 설정에서 거부할 수 있습니다.
     <ul>
       <li>iPhone: 설정 > 개인정보 보호 및 보안 > 추적</li>
@@ -320,9 +347,11 @@
 <footer>
   <strong>운영자 정보</strong><br>
   운영자: 김민규 &nbsp;|&nbsp; 이메일: pawdaily2026@gmail.com<br>
-  시행일: 2026년 4월 27일<br>
+  시행일: 2026년 5월 9일 (개정)<br>
+  최초 시행: 2026년 4월 27일<br>
   <br>
-  <a href="terms.html">이용약관 보기 →</a>
+  <a href="terms.html">이용약관 보기 →</a> &nbsp;·&nbsp;
+  <a href="location.html">위치기반서비스 이용약관 보기 →</a>
 </footer>
 
 </body>
